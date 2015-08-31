@@ -35,11 +35,13 @@
         <!--</property>-->
         <!--<property value="true" name="ignoreAcceptHeader"/>-->
     <!--</bean>-->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-        <!--<property value="org.springframework.web.servlet.view.JstlView" name="viewClass"/>-->
-        <!--<property value="/WEB-INF/jsps/" name="prefix"/>-->
-        <!--<property value=".jsp" name="suffix"/>-->
-    <!--</bean>-->
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property value="org.springframework.web.servlet.view.JstlView" name="viewClass"/>
+        <property value="/WEB-INF/jsps/" name="prefix"/>
+        <property value=".jsp" name="suffix"/>
+    </bean>
+
     <!--&lt;!&ndash;200*1024*1024即200M resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 &ndash;&gt;-->
     <!--<bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">-->
         <!--<property value="209715200" name="maxUploadSize"/>-->
