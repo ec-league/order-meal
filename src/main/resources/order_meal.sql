@@ -1,0 +1,7 @@
+create table `ORDER_RECORD` (
+    `UIDPK` bigint(20) NOT NULL AUTO_INCREMENT,
+    `USER_NAME` varchar(50) NOT NULL,
+    `MEAL_TYPE` varchar(10) NOT NULL,
+    `ORDER_DATE` varchar(15) NOT NULL,
+    PRIMARY KEY (`UIDPK`)
+) ENGINE = INNODB DEFAULT CHARSET = utf8;
